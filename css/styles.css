@@ -53,10 +53,6 @@ nav {
     border: 1px solid #333;
 }
 
-nav img{
-    float: left;
-}
-
 nav ul {
     list-style-type: none;
 }
