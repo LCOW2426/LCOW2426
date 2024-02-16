@@ -47,8 +47,8 @@ header img {
 }
 
 nav {
-    text-shadow: 1px solid black;
-    padding: 10px;
+    box-shadow: 1px solid black;
+    padding: 5px;
     margin: 10px;
     border: 1px solid #333;
 }
