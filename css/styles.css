@@ -1,11 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body{
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
     background-color: white;
     font-family: "Space Mono", monospace;
 }
 
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Gilda Display", serif;
 }
 
@@ -14,22 +34,32 @@ h1, h2, h3, h4, h5, h6{
     margin: auto;
 }
 
-header{
+header {
     background-color: black;
     margin: 10px 0;
     border-radius: 10px;
-    box-shadow: 4px black;
+    box-shadow: 4px 2px 2px black;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
-nav{
+header img {
+    margin: 0 auto;
+}
+
+nav {
     text-shadow: 1px solid black;
     padding: 10px;
     margin: 10px;
     border: 1px solid #333;
 }
 
-main{
+nav ul {
+    list-style-type: none;
+}
+
+main {
     display: block;
     margin: 10px;
     padding: 10px;
@@ -37,8 +67,8 @@ main{
     box-shadow: 5px red;
 }
 
-footer p{
-    font-size: 10px;
+footer p {
+    font-size: 12px;
     text-align: center;
     margin-top: 10px;
 }
