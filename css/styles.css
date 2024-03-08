@@ -50,6 +50,11 @@ h2 {
 	margin-bottom: 20px;
 }
 
+.btn{
+    background: #ddd;
+    padding: 0 10px;
+}
+
 header {
 	background-color: rgb(71, 71, 71);
 	margin: 10px 0;
