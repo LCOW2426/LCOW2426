@@ -74,3 +74,54 @@ footer p {
     text-align: center;
     margin-top: 10px;
 }
+
+.title{
+    margin-top: 50px;
+}
+
+/* product-of-week */
+.product-of-week{
+display:grid;
+grid-template-columns: 1fr 1fr;
+text-align:center;
+}
+.product-of-week h2{
+  margin: 50px 0;
+    }
+.product-of-week img{
+  margin:auto;
+  width: 300px;
+    }
+
+
+/* Specials */
+.specials{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 50px 0;
+}
+.product-card{
+border: 1px solid #333;
+width: 300px;
+padding:20px;
+
+}
+
+.product-card img {
+    width:200px;
+    height: 350px;
+    display: block;
+  margin:auto;
+  /* width: 50%; */
+}
+
+.product-card .price {
+    font-size: 24px;
+}
+
+.guarenteed{
+    text-align:center;
+    margin: 100px 0;
+    font-size: 30px;
+    color: #893023;
+}
