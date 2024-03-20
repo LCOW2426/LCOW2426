@@ -1,0 +1,41 @@
+/* team.css */
+
+
+.grid img{
+    width: 250px;
+}
+
+section{
+    margin: 30px 0;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print {
+	figcaption {
+		text-align: center;
+		margin-top: 8px;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: 2;
+		grid-gap: 10px;
+	}
+
+	aside {
+		grid-column: 1 / span 2;
+	}
+}
+
+/* Media Query for Desktop Viewport. */
+@media screen and (min-width: 769px), print {
+	.grid {
+		grid-template-columns: 4;
+	}
+  
+	figcaption {
+		font-size: 1em;
+	}
+	aside {
+		grid-column: 1 / span 4;
+	}
+}
