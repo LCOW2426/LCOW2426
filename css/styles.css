@@ -3,7 +3,9 @@
 
 /* Primary Color: #0039a6 */
 /* Primary bg: #a9c5fb */
-
+* {
+    box-sizing: border-box;
+}
 body,
 header,
 nav,

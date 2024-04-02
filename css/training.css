@@ -1,3 +1,7 @@
+.table-wrapper{
+	overflow-x:auto;
+}
+
 table,
 th,
 td {
@@ -7,7 +11,6 @@ td {
 table {
 	width: 100%;
 	border-collapse: collapse;
-	table-layout: fixed;
 }
 
 caption {
@@ -19,7 +22,7 @@ caption {
 
 th,
 td {
-	border: 1px solid #444;
+	border: 1px solid #333;
 	padding: 20px 10px;
 	text-align: left;
 }
@@ -28,15 +31,19 @@ table tr:nth-child(odd) {
 	background-color: #ccc;
 }
 
+table tr:nth-child(even) {
+	background-color: #bbb;
+}
+
 th {
-	background-color: #000;
+	background-color: #0039a6;
 	color: #fff;
 	font-weight: bold;
 }
 
 tr:hover {
-	background-color: #aaa;
-    font-weight: bolder;
+	background-color: #fff !important;
+	color: #0039a6;
 }
 
 tr img {
