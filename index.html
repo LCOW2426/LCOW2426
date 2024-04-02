@@ -9,27 +9,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🍴 Shrestha Processors | Food Processors</title>
+    <title>Shrestha Choppers | Food Processors</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
 <body>
-    <div class="container">
+    <div>
         <header>
+            <!-- taken from: for study purpose only -->
+            <!-- https://images.app.goo.gl/ug5MfrmM4KJzjK2s7 -->
             <img
-                src="images/banner.png"
+                src="images/banner.jpg"
                 class="banner-image"
                 alt="company banner"
             />
         </header>
+        
         <nav>
-            <a href="index.html"
-					><img
-						src="images/newlogo.png"
+            <img
+						src="images/logo.png"
 						alt="company logo"
 						class="logo"
-				/></a>
+				/>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -42,26 +44,37 @@
             </ul>
         </nav>
     
-        <main>
-            <h1>Welcome to Shrestha Choppers</h1>
-            <section>
-                <h2>About Us</h2>
-                <p>We are a passionate team of professionals dedicated to providing top-notch services to our clients. With years of experience and expertise, we strive to exceed expectations and deliver exceptional results in every product we sell.</p>
-                <a href="about.html" class="btn">Learn More</a>
-            </section>
+        <main  class="container">
+            <h1 class="text-center mt-5">Welcome to Shrestha Choppers</h1>
+            <div class="home-content">
+                <section class="card">
+                    <img src="images/info.png" alt="info icon" class="icon"/>
+                    <h2>About Us</h2>
+                    <p>We are a passionate team of professionals dedicated to providing top-notch services to our clients. With years of experience and expertise, we strive to exceed expectations and deliver exceptional results in every product we sell.</p>
+                    <a href="about.html" class="btn">Learn More</a>
+                </section>
+        
+                <section class="card">
+                    <img src="images/special.png" alt="special icon" class="icon"/>
+
+                    <h2>Specials</h2>
+                    <p>Discover our latest specials and exclusive offers designed to save you money and enhance your experience. From discounts on products and services to limited-time promotions, there's something for everyone to enjoy!</p>
+                    
+                    <a href="specials.html" class="btn">View Specials</a>
+                </section>
+
+            </div>
     
-            <section>
-                <h2>Specials</h2>
-                <p>Discover our latest specials and exclusive offers designed to save you money and enhance your experience. From discounts on products and services to limited-time promotions, there's something for everyone to enjoy!</p>
-                
-                <a href="specials.html" class="btn">View Specials</a>
-            </section>
-    
-            <section>
-                <h2>Contact Us</h2>
-                <p>Have a question or want to discuss your project? Feel free to get in touch with us! Our friendly team is here to assist you and provide the guidance you need to turn your ideas into reality.</p>
-           
-                <a href="contact.html" class="btn">Contact Us</a>
+            <section class="card home-contact">
+                <img src="/images/contact.png" alt="contact us illustration" />
+                <div class="m-auto pr-40">
+                    <h2>Contact Us</h2>
+                    <p>Have a question or want to discuss your project? 
+                        Feel free to get in touch with us! Our friendly team is here to assist you and provide the guidance you need to turn your ideas into reality.</p>
+               
+                    <a href="contact.html" class="btn">Contact Us</a>
+
+                </div>
             </section>
         </main>
         <footer>
