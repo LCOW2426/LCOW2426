@@ -145,9 +145,8 @@ nav ul li a {
 	border-radius: 10px;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a.active {
 	transition: all ease 0.4s;
-	/* color: white; */
 	background: #a9c5fb;
 }
 
