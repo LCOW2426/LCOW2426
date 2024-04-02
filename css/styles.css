@@ -44,7 +44,7 @@ h6 {
 .container {
 	max-width: 1300px;
 	margin: 20px auto;
-	padding: 0 20px;
+	padding: 0 100px;
 }
 
 .icon{
@@ -157,6 +157,8 @@ main {
 	box-shadow: 5px red;
 }
 
+
+
 .home-content{
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -178,10 +180,6 @@ gap: 40px;
 	border-radius: 20px;
 	padding:  40px;
 	margin: 20px;
-}
-
-.card .btn{
-
 }
 
 footer p {
@@ -250,12 +248,7 @@ footer p {
 	}
 }
 
-/* Desktop Styles */
-@media (min-width: 1025px) {
-	.container {
-		padding: 0 100px;
-	}
-}
+
 
 /* Mobile Styles */
 @media (max-width: 600px) {
