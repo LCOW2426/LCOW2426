@@ -1,0 +1,66 @@
+
+/* product-of-week */
+.product-of-week {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 30px;
+}
+.product-of-week h2 {
+	/* margin: 50px 0; */
+}
+.product-of-week .hero-product {
+	margin: auto;
+	width: 300px;
+}
+
+/* Specials */
+.specials {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 30px;
+	margin: 10px 0 50px 0;
+}
+.product-card {
+	/* border: 1px solid #333; */
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	padding: 20px 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 130px;
+	height: 200px;
+	display: block;
+	margin: auto;
+	/* width: 50%; */
+}
+
+.product-card p{
+    text-align: center;
+}
+
+.product-card .title {
+    color: #0039a6;
+}
+.product-card .price {
+	font-size: 14px;
+}
+.product-card .price span {
+	font-size: 18px;
+    font-weight: bold;
+}
+
+.guarenteed {
+	text-align: center;
+	margin: 100px 0;
+	font-size: 30px;
+	color: #893023;
+}
+
+@media (max-width: 700px) {
+    .product-of-week .hero-product{
+        width:200px;
+        margin-top: 30px;
+    }
+}
