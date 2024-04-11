@@ -20,15 +20,18 @@
 			</header>
 
 			<nav>
-				 <div class="ham-flex">
-                    <img src="images/logo.png" alt="company logo" class="logo" />
-                    <div class="menu-toggle"><div class="ham">
-                        &#9776;
-                    </div>
-                    <div class="cross">
-                        &#x274c;
-                    </div></div>
-                </div>
+				<div class="ham-flex">
+					<img
+						src="images/logo.png"
+						alt="company logo"
+						class="logo"
+					/>
+					<div class="menu-toggle">
+						<div class="ham">&#9776;</div>
+						<div class="cross">&#x274c;</div>
+					</div>
+				</div>
+
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
@@ -45,7 +48,7 @@
 
 			<main class="container">
 				<h1>Contact Us</h1>
-				<form action="submit_form.php" method="post">
+				<form onsubmit="alert('Thank you!');">
 					<fieldset>
 						<legend>Contact Form</legend>
 						<div class="grid-2">
@@ -145,7 +148,7 @@
 						<button type="submit" class="btn">
 							Submit Request
 						</button>
-						<button type="reset" class="btn">Reset Form</button>
+						<button type="reset" class="btn btn-outline">Reset Form</button>
 					</div>
 				</form>
 			</main>

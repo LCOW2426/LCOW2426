@@ -28,6 +28,12 @@
     border-radius: 10px;
 }
 
+.product-card:hover img, .product-card:hover p.title {
+	font-weight: bold;
+	transform: scale(1.15);
+	transition: scale ease-in 0.5s;
+}
+
 .product-card img {
     width: 130px;
 	height: 200px;

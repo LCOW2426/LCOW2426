@@ -90,6 +90,12 @@ a:visited {
 	border: 2px solid #a9c5fb;
 	margin: 10px 0;
 	display: inline-block;
+	cursor: pointer;
+}
+
+.btn.btn-outline{
+	background: none;
+
 }
 
 .btn:hover {
@@ -141,6 +147,7 @@ nav ul {
 nav ul li {
 	display: inline;
 	margin: 10px;
+	line-height: 50px;
 }
 
 nav ul li a {
@@ -195,8 +202,8 @@ footer p {
 	text-align: center;
 }
 
-/* Mobile Styles */
-@media (max-width: 600px) {
+nav ul.mobile-ham-menu{
+	display: none;
 }
 
 /* Tablet Styles */
@@ -204,13 +211,21 @@ footer p {
 	.container {
 		padding: 0 50px;
 	}
+	nav ul li {
+		display: inline;
+		margin: 0px;
+		line-height: 50px;
+	}
+	
+	nav ul li a {
+		padding: 10px 10px;
+		border-radius: 10px;
+	}
 }
 
 /* Mobile Styles */
 @media (max-width: 600px) {
-	body {
-		font-size: 20px;
-	}
+	
 	.container {
 		padding: 0 5px;
 	}
@@ -235,33 +250,32 @@ footer p {
 		display: none;
 	}
 	nav ul {
-		list-style-type: none;
-		text-align: center;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: none;
 	}
-	nav ul li {
-		display: block;
-		margin: 15px;
-	}
+
 
 	/* for hamburger */
 	.menu-toggle {
 		display: block;
 	}
 
-	nav ul {
-		display: none;
+	nav ul.mobile-ham-menu {
+		display: block;
+
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		text-align: center;
 	}
 
-	nav ul li {
-		margin-bottom: 10px;
+	nav ul.mobile-ham-menu li {
+		display: block;
+		margin: 0;
+		padding: 5px;
+		border-bottom: 1px solid black;
 	}
 
-	nav ul li a {
+	nav ul.mobile-ham-menu li a {
 		display: block;
 		padding: 10px;
 		text-decoration: none;

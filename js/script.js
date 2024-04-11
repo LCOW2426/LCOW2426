@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     //   for hamburger
     $(".menu-toggle").click(function () {
-        $("nav ul").slideToggle();
+        $("nav ul").toggleClass("mobile-ham-menu");
         $(".ham").toggle();
         $(".cross").toggle();
     });
