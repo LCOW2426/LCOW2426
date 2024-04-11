@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Primary Color: #0039a6 */
 /* Primary bg: #a9c5fb */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 body,
 header,
@@ -35,11 +34,17 @@ h6 {
 	font-family: "Poppins", sans-serif;
 }
 
-.m-auto{
+/* CSS for the hamburger menu */
+.menu-toggle {
+	display: none;
+	cursor: pointer;
+}
+
+.m-auto {
 	margin: auto;
 }
 
-.pr-40{
+.pr-40 {
 	padding-right: 40px;
 }
 
@@ -49,19 +54,19 @@ h6 {
 	padding: 0 100px;
 }
 
-.icon{
-	width:50px;
+.icon {
+	width: 50px;
 }
 
 h2 {
 	margin-top: 14px;
 }
 
-.text-center{
+.text-center {
 	text-align: center;
 }
 
-.mt-5{
+.mt-5 {
 	margin-top: 50px;
 }
 
@@ -87,12 +92,12 @@ a:visited {
 	display: inline-block;
 }
 
-.btn:hover{
+.btn:hover {
 	border: 2px solid #0039a6;
 	transition: all ease 0.4s;
 }
 
-p{
+p {
 	text-align: justify;
 }
 
@@ -128,8 +133,6 @@ nav {
 	align-items: center;
 }
 
-
-
 nav ul {
 	list-style-type: none;
 	text-align: right;
@@ -145,7 +148,8 @@ nav ul li a {
 	border-radius: 10px;
 }
 
-nav ul li a:hover, nav ul li a.active {
+nav ul li a:hover,
+nav ul li a.active {
 	transition: all ease 0.4s;
 	background: #a9c5fb;
 }
@@ -158,28 +162,26 @@ main {
 	box-shadow: 5px red;
 }
 
-
-
-.home-content{
+.home-content {
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
 
-.home-contact{
+.home-contact {
 	display: grid;
 	grid-template-columns: 50% 50%;
-gap: 40px;
+	gap: 40px;
 }
 
-.home-contact img{
+.home-contact img {
 	width: 100%;
 	border-radius: 10px;
 }
 
-.card{
+.card {
 	background: #cfdfff;
 	border-radius: 20px;
-	padding:  40px;
+	padding: 40px;
 	margin: 20px;
 }
 
@@ -195,7 +197,6 @@ footer p {
 
 /* Mobile Styles */
 @media (max-width: 600px) {
-	
 }
 
 /* Tablet Styles */
@@ -204,8 +205,6 @@ footer p {
 		padding: 0 50px;
 	}
 }
-
-
 
 /* Mobile Styles */
 @media (max-width: 600px) {
@@ -226,6 +225,15 @@ footer p {
 		display: block;
 		align-items: center;
 	}
+	.ham-flex {
+		/* hambburger */
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.cross {
+		display: none;
+	}
 	nav ul {
 		list-style-type: none;
 		text-align: center;
@@ -236,18 +244,43 @@ footer p {
 		display: block;
 		margin: 15px;
 	}
-	.home-content{
-		display: block;
-	}
-	
-	.home-contact{
+
+	/* for hamburger */
+	.menu-toggle {
 		display: block;
 	}
 
-	.card{
+	nav ul {
+		display: none;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	nav ul li {
+		margin-bottom: 10px;
+	}
+
+	nav ul li a {
+		display: block;
+		padding: 10px;
+		text-decoration: none;
+		color: #333;
+		background-color: #f4f4f4;
+	}
+
+	.home-content {
+		display: block;
+	}
+
+	.home-contact {
+		display: block;
+	}
+
+	.card {
 		padding: 30px 20px;
 	}
-	p{
+	p {
 		text-align: left;
 	}
 }

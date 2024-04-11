@@ -6,6 +6,7 @@
 		<title>Contact Us | Shrestha Choppers</title>
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="css/contact.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -19,7 +20,15 @@
 			</header>
 
 			<nav>
-				<img src="images/logo.png" alt="company logo" class="logo" />
+				 <div class="ham-flex">
+                    <img src="images/logo.png" alt="company logo" class="logo" />
+                    <div class="menu-toggle"><div class="ham">
+                        &#9776;
+                    </div>
+                    <div class="cross">
+                        &#x274c;
+                    </div></div>
+                </div>
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
@@ -97,8 +106,8 @@
 							</fieldset>
 
 							<fieldset>
-                                <legend>Interests:</legend>
-                                <div>
+								<legend>Interests:</legend>
+								<div>
 									<input
 										type="checkbox"
 										id="interests-promotions"
@@ -109,31 +118,33 @@
 										>Promotions</label
 									>
 								</div>
-                                <div>
-                                    <input
-                                        type="checkbox"
-                                        id="interests-newsletter"
-                                        name="interests"
-                                        value="newsletter"
-                                    />
-                                    <label for="interests-newsletter"
-                                        >Newsletter</label
-                                    >
-                                </div>
+								<div>
+									<input
+										type="checkbox"
+										id="interests-newsletter"
+										name="interests"
+										value="newsletter"
+									/>
+									<label for="interests-newsletter"
+										>Newsletter</label
+									>
+								</div>
 							</fieldset>
-                            <fieldset>
-                                <legend for="priority">Priority:</legend>
-                                <select id="priority" name="priority">
-                                    <option value="low">Low</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="high">High</option>
-                                </select>
-                            </fieldset>
+							<fieldset>
+								<legend for="priority">Priority:</legend>
+								<select id="priority" name="priority">
+									<option value="low">Low</option>
+									<option value="medium">Medium</option>
+									<option value="high">High</option>
+								</select>
+							</fieldset>
 						</div>
 					</fieldset>
 
 					<div class="buttons">
-						<button type="submit" class="btn">Submit Request</button>
+						<button type="submit" class="btn">
+							Submit Request
+						</button>
 						<button type="reset" class="btn">Reset Form</button>
 					</div>
 				</form>
@@ -149,5 +160,6 @@
 				<p>Arbin Shrestha, Student number: c0932096</p>
 			</footer>
 		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>

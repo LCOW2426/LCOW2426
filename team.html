@@ -3,7 +3,6 @@
     Student number: c0932096
  -->
 
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -13,13 +12,12 @@
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="css/team.css" />
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 
 	<body>
 		<div>
 			<header>
-				<!-- taken from: for study purpose only -->
-				<!-- https://images.app.goo.gl/ug5MfrmM4KJzjK2s7 -->
 				<img
 					src="images/banner.jpg"
 					class="banner-image"
@@ -28,7 +26,15 @@
 			</header>
 
 			<nav>
-				<img src="images/logo.png" alt="company logo" class="logo" />
+				 <div class="ham-flex">
+                    <img src="images/logo.png" alt="company logo" class="logo" />
+                    <div class="menu-toggle"><div class="ham">
+                        &#9776;
+                    </div>
+                    <div class="cross">
+                        &#x274c;
+                    </div></div>
+                </div>
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
@@ -45,7 +51,7 @@
 				<section class="card">
 					<div class="grid">
 						<aside>
-							<img src="/images/team.png" alt="teams icon"/>
+							<img src="/images/team.png" alt="teams icon" />
 							<h2>Who We Are</h2>
 							<p>
 								At Shrestha Processors, our team is our greatest
@@ -98,7 +104,7 @@
 					</div>
 				</section>
 				<section class="card">
-					<img src="/images/journey.png" alt="story icon"/>
+					<img src="/images/journey.png" alt="story icon" />
 					<h2>Our Story</h2>
 					<p>
 						Founded in a small garage in 2010, Shrestha Processors
@@ -120,5 +126,6 @@
 				<p>Arbin Shrestha, Student number: c0932096</p>
 			</footer>
 		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>

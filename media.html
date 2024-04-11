@@ -6,6 +6,7 @@
 		<title>Contact Us | Shrestha Choppers</title>
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="css/media.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -19,7 +20,15 @@
 			</header>
 
 			<nav>
-				<img src="images/logo.png" alt="company logo" class="logo" />
+                 <div class="ham-flex">
+                    <img src="images/logo.png" alt="company logo" class="logo" />
+                    <div class="menu-toggle"><div class="ham">
+                        &#9776;
+                    </div>
+                    <div class="cross">
+                        &#x274c;
+                    </div></div>
+                </div>
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
@@ -34,30 +43,37 @@
 
 			<main class="container">
 				<h1>Media</h1>
-                <h3>Our best selling product</h3>
-                <iframe src="https://www.youtube.com/embed/EJiu64w-CME?si=H11dwnGMUlDGXQVW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3>Word from our CEO</h3>
-                <audio controls>
-                    <source src="media/ceo-voice.mp3" type="audio/mp3" />
-                    <!-- <source src="media/ceo-voice.ogg" type="audio/ogg" /> -->
-                    <p>Your browser does not support the audio element.</p>
-                </audio>
-                <h3>
-                    Our Company
-                </h3>
-                <video controls  id="example">
-                    <source id="vid-src" src="media/the-best-food-processors.mp4" type="video/mp4" />
-                    <track
-                        id="despsrc"
-                        src="des"
-                        kind="descriptions"
-                        srclang="en"
-                        label="English Descriptions"
-                    />
-                    <p>Your browser does not support the video element.</p>
-                </video>
-
-                
+				<h3>Our best selling product</h3>
+				<iframe
+					src="https://www.youtube.com/embed/EJiu64w-CME?si=H11dwnGMUlDGXQVW"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen
+				></iframe>
+				<h3>Word from our CEO</h3>
+				<audio controls>
+					<source src="media/ceo-voice.mp3" type="audio/mp3" />
+					<!-- <source src="media/ceo-voice.ogg" type="audio/ogg" /> -->
+					<p>Your browser does not support the audio element.</p>
+				</audio>
+				<h3>Our Company</h3>
+				<video controls id="example">
+					<source
+						id="vid-src"
+						src="media/the-best-food-processors.mp4"
+						type="video/mp4"
+					/>
+					<track
+						id="despsrc"
+						src="des"
+						kind="descriptions"
+						srclang="en"
+						label="English Descriptions"
+					/>
+					<p>Your browser does not support the video element.</p>
+				</video>
 			</main>
 
 			<footer>
@@ -70,5 +86,6 @@
 				<p>Arbin Shrestha, Student number: c0932096</p>
 			</footer>
 		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>

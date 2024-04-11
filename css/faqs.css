@@ -4,6 +4,9 @@
 .question {
     font-weight: bold;
     cursor: pointer;
+    background: #cfdfff;
+    padding:15px 20px;
+    border-radius: 10px;
 }
 .answer {
     display: none;
