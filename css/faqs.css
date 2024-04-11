@@ -1,0 +1,14 @@
+.faq {
+    margin-bottom: 20px;
+}
+.question {
+    font-weight: bold;
+    cursor: pointer;
+}
+.answer {
+    display: none;
+    margin-top: 5px;
+}
+.default-answer {
+    display: block; 
+}

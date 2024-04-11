@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us | Shrestha Choppers</title>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/contact.css" />
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<img
+					src="images/banner.jpg"
+					class="banner-image"
+					alt="company banner"
+				/>
+			</header>
+
+			<nav>
+				<img src="images/logo.png" alt="company logo" class="logo" />
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="team.html">Our Team</a></li>
+					<li><a href="specials.html">Specials</a></li>
+					<li><a href="training.html">Training</a></li>
+					<li><a href="media.html">Media</a></li>
+					<li><a href="faqs.html">FAQs</a></li>
+					<li>
+						<a href="contact.html" class="active">Contact Us</a>
+					</li>
+				</ul>
+			</nav>
+
+			<main class="container">
+				<h1>Contact Us</h1>
+				<form action="submit_form.php" method="post">
+					<fieldset>
+						<legend>Contact Form</legend>
+						<div class="grid-2">
+							<div>
+								<label for="name">Name:</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									required
+								/>
+							</div>
+							<div>
+								<label for="email">Email:</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									required
+								/>
+							</div>
+						</div>
+
+						<label for="subject">Subject:</label>
+						<input type="text" id="subject" name="subject" />
+
+						<label for="message">Message:</label>
+						<textarea
+							id="message"
+							name="message"
+							rows="4"
+							required
+						></textarea>
+
+						<div class="grid-3">
+							<fieldset>
+								<legend>How did you hear about us?</legend>
+								<div>
+									<input
+										type="radio"
+										id="hearing-word"
+										name="hearing"
+										value="word_of_mouth"
+									/>
+									<label for="hearing-word"
+										>Word of Mouth</label
+									>
+								</div>
+								<div>
+									<input
+										type="radio"
+										id="hearing-website"
+										name="hearing"
+										value="website"
+									/>
+									<label for="hearing-website">Website</label>
+								</div>
+							</fieldset>
+
+							<fieldset>
+                                <legend>Interests:</legend>
+                                <div>
+									<input
+										type="checkbox"
+										id="interests-promotions"
+										name="interests"
+										value="promotions"
+									/>
+									<label for="interests-promotions"
+										>Promotions</label
+									>
+								</div>
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        id="interests-newsletter"
+                                        name="interests"
+                                        value="newsletter"
+                                    />
+                                    <label for="interests-newsletter"
+                                        >Newsletter</label
+                                    >
+                                </div>
+							</fieldset>
+                            <fieldset>
+                                <legend for="priority">Priority:</legend>
+                                <select id="priority" name="priority">
+                                    <option value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </fieldset>
+						</div>
+					</fieldset>
+
+					<div class="buttons">
+						<button type="submit" class="btn">Submit Request</button>
+						<button type="reset" class="btn">Reset Form</button>
+					</div>
+				</form>
+			</main>
+
+			<footer>
+				<p>&copy; Copyright 2024. &copy;All Rights Reserved.</p>
+				<p>
+					<a href="mailto:info@shresthachoppers.com"
+						>Request information</a
+					>
+				</p>
+				<p>Arbin Shrestha, Student number: c0932096</p>
+			</footer>
+		</div>
+	</body>
+</html>

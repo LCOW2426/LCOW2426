@@ -1,0 +1,23 @@
+/* mobile first */
+
+video, iframe{
+    width: 100%;
+    height: 340px;
+}
+
+@media screen and (min-width: 790px), print {
+    
+video, iframe{
+    width: 100%;
+    height: 440px;
+}
+
+}
+
+
+@media screen and (min-width: 1450px), print {
+    video, iframe{
+        width: 100%;
+        height: 620px;
+    }
+}
