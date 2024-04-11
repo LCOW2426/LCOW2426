@@ -58,6 +58,11 @@ h6 {
 	width: 50px;
 }
 
+.hero{
+	width: 100%;
+	border-radius:10px;
+}
+
 h2 {
 	margin-top: 14px;
 }
@@ -127,7 +132,7 @@ header {
 }
 
 nav {
-	padding: 20px;
+	padding: 10px;
 	margin: 10px;
 	border: 2px solid #a9c5fb;
 	margin: auto;
